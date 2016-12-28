@@ -18,8 +18,6 @@ class LoginController
 		if (isset($_POST['register'])) {
 			if ($_POST['name'] != '' && $_POST['surname'] != '' && $_POST['email'] != '') {
 
-
-
 				$setlogin = Login::setLogin($name,$surname,$email,$sex,$bdate);
 				echo '<h3 style="color:green;text-align:center" >Вы зарегистрировались!</h3>';
 			}
@@ -37,7 +35,7 @@ class LoginController
 				session_start();
 			$_SESSION['name']=$login['name'];
 			$_SESSION['surname']=$login['surname'];
-			echo '<script>location.href = "/bwtTest"</script>';
+			echo '<script>location.href = "weather"</script>';
 			}
 			else{
 				echo '<h3 style="color:red">Не верно!</h3>';
@@ -48,7 +46,7 @@ class LoginController
 		if (isset($_POST['exit'])) {
 			unset($_SESSION['name']);
 			unset($_SESSION['surname']);
-			echo '<script>location.href = "/bwtTest"</script>';
+			echo '<script>location.href = "login"</script>';
 		}
 		
 		return true;
