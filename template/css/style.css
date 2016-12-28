@@ -1,0 +1,22 @@
+
+.hid{
+	display: none;
+}
+
+.flex-center{
+	display: flex;
+    justify-content: center;
+}
+
+#chbox{
+	display: inline-block;
+	
+}
+
+.chb input, .chb label{
+margin: 0;
+}
+
+.chb{
+	margin-bottom: 10px;
+}
