@@ -21,6 +21,7 @@
     </head>
     <body>
     <div class="container">
+    <form action="login" method="post">
       <p style="text-align: right">
         <?php 
         if ($_SESSION['name']) {
@@ -33,3 +34,5 @@
         }
         ?>
       </p>
+      </form>
+      </div>

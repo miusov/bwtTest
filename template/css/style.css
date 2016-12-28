@@ -3,9 +3,31 @@
 	display: none;
 }
 
-.flex-center{
+ul{
+	margin: 0;
+}
+
+.flex-center, .center{
 	display: flex;
     justify-content: center;
+}
+
+.center{
+	padding: 25px;
+	border: 1px gray solid;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.center li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.center li a{
+	text-decoration: none;
+	margin-bottom: 5px;
 }
 
 #chbox{
@@ -19,4 +41,8 @@ margin: 0;
 
 .chb{
 	margin-bottom: 10px;
+}
+
+.weathercenter{
+	text-align: center;
 }

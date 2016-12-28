@@ -2,9 +2,6 @@
 include_once('template/header.php'); 
 session_start();
 ?>
-
-
-<div class="container">
    <div class="row">
       <div class="col-md-12">
     <div class="flex-center">
@@ -41,7 +38,6 @@ session_start();
            <input type="submit" name="login" value="Войти" id="reg">
        </form>
    </div>
-</div>
 </div>
 </div>
 

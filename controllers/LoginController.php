@@ -37,7 +37,7 @@ class LoginController
 				session_start();
 			$_SESSION['name']=$login['name'];
 			$_SESSION['surname']=$login['surname'];
-			echo '<script>location.href = "login"</script>';
+			echo '<script>location.href = "/bwtTest"</script>';
 			}
 			else{
 				echo '<h3 style="color:red">Не верно!</h3>';
@@ -48,7 +48,7 @@ class LoginController
 		if (isset($_POST['exit'])) {
 			unset($_SESSION['name']);
 			unset($_SESSION['surname']);
-			echo '<script>location.href = "login"</script>';
+			echo '<script>location.href = "/bwtTest"</script>';
 		}
 		
 		return true;
