@@ -7,22 +7,7 @@ session_start();
 <div class="container">
    <div class="row">
       <div class="col-md-12">
-          <p style="text-align: right">
-            <?php 
-            if ($_SESSION['name']) {
-              echo  'Добро пожаловать '.$_SESSION['name'].' '; 
-              echo $_SESSION['surname'];echo ' ';
-              echo '<input type="submit" value="Выход" name="exit">'; 
-          }
-          else{
-            echo '<a href="login">Вход/Регистрация</a>';
-        }
-        ?>
-    </p>
     <div class="flex-center">
-        <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
-            
-        </form>
         <form action="<?php $_SERVER['PHP_SELF']?>" method="post" id="sendform">
             <div class="form-group hid">
                 <label for="surname">Фамилия*</label>

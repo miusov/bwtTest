@@ -21,3 +21,10 @@ require_once(ROOT.'/components/Db.php');
 
 $router=new Router();
 $router->run();
+?>
+<?php 
+include_once('template/header.php'); 
+session_start();
+?>
+
+<?php include_once('template/footer.php') ?>
