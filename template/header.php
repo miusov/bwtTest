@@ -20,19 +20,21 @@
       <![endif]-->
     </head>
     <body>
-    <div class="container">
-    <form action="login" method="post">
-      <p style="text-align: right">
-        <?php 
-        if ($_SESSION['name']) {
-          echo  'Добро пожаловать '.$_SESSION['name'].' '; 
-          echo $_SESSION['surname'];echo ' ';
-          echo '<input type="submit" value="Выход" name="exit">'; 
-        }
-        else{
-          echo '<a href="login">Вход/Регистрация</a>';
-        }
-        ?>
-      </p>
-      </form>
+    <div class="container-fluid head">
+        <div class="row log-in">
+          <form action="login" method="post">
+            <p style="text-align: right" class="signin">
+              <?php 
+              if ($_SESSION['name']) {
+                echo  'Добро пожаловать '.$_SESSION['name'].' '; 
+                echo $_SESSION['surname'];echo ' ';
+                echo '<input type="submit" value="Выход" name="exit">'; 
+              }
+              else{
+                echo '<a href="login">Вход/Регистрация</a>';
+              }
+              ?>
+            </p>
+          </form>
+        </div>
       </div>

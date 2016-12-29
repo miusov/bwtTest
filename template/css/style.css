@@ -1,4 +1,12 @@
+.head{
+	padding: 0 !important;
+}
 
+.signin{
+	margin-right: 20px;
+	height: 30px;
+	line-height: 30px;
+}
 .hid{
 	display: none;
 }
@@ -16,7 +24,7 @@ ul{
 	padding: 25px;
 	border: 1px gray solid;
 	font-size: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .center li{
@@ -73,4 +81,16 @@ dd{
 }
 .container .row h2{
 	text-align: center;
+}
+
+#textmessage{
+	height: 100px;
+}
+
+#message input, #message textarea{
+	width: 100%;
+}
+
+.error{
+	color: red;
 }
