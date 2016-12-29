@@ -9,7 +9,7 @@ ul{
 
 .flex-center, .center{
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .center{
@@ -36,7 +36,7 @@ ul{
 }
 
 .chb input, .chb label{
-margin: 0;
+	margin: 0;
 }
 
 .chb{
@@ -49,4 +49,28 @@ margin: 0;
 
 .weatherText{
 	font-size: 18px;
+}
+
+table{
+	margin-top: 50px;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th{
+	border: 2px #B1D0E6 solid;
+	padding: 0 10px;
+}
+th{
+	color: #00669C;
+}
+td{
+	color: #0066B2;
+	font-size: 18px;
+}
+dd{
+	margin-left: 0;
+}
+.container .row h2{
+	text-align: center;
 }

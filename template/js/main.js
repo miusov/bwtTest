@@ -22,6 +22,34 @@
 				},
 				name:{
 					minlength: 'Длина имени должна быть не менее 4-х символов',
+				}
+			}
+		})
+
+		$('#message').validate({
+			rules:{
+				name:{
+					required: true,
+					minlength: 2,
+				},
+				message:{
+					required: true,
+					minlength: 10,
+				},
+				email:{
+					required: true,
+					email: true,				
+				}
+			},
+			messages:{
+				email:{
+					email: 'Введите правильный Email!',
+				},
+				name:{
+					minlength: 'Длина имени должна быть не менее 4-х символов',
+				},
+				message:{
+					minlength: 'Длина сообщения должна быть не менее 10 смволов',
 				},
 			}
 		})

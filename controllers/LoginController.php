@@ -22,7 +22,7 @@ class LoginController
 				echo '<h3 style="color:green;text-align:center" >Вы зарегистрировались!</h3>';
 			}
 			else{
-				echo '<h3 style="color:red">Не все поля заполнены!</h3>';
+				echo '<h3 style="color:red;text-align:center">Не все поля заполнены!</h3>';
 			}
 			
 			session_start();
