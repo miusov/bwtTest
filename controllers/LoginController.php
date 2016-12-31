@@ -7,7 +7,7 @@ class LoginController
 	public function actionIndex()
 	{
 		
-		require_once(ROOT.'/views/login/index.php');
+		require_once(ROOT.'/views/login.php');
 
 		$name = trim($_POST['name']);
 		$surname = trim($_POST['surname']);
@@ -38,7 +38,7 @@ class LoginController
 			echo '<script>location.href = "weather"</script>';
 			}
 			else{
-				echo '<h3 style="color:red">Не верно!</h3>';
+				echo '<h3 style="color:red;text-align:center">Не верно!</h3>';
 			}
 			
 		}

@@ -1,0 +1,141 @@
+.head{
+	padding: 0 !important;
+}
+
+.signin{
+	margin-right: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.hid{
+	display: none;
+}
+
+ul{
+	margin: 0;
+}
+
+.flex-center, .center{
+	display: flex;
+	justify-content: center;
+}
+
+.center{
+	padding: 25px;
+	border: 1px gray solid;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.center li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.center li a{
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+#chbox{
+	display: inline-block;
+	
+}
+
+.chb input, .chb label{
+	margin: 0;
+}
+
+.chb{
+	margin-bottom: 10px;
+}
+
+.vcenter{
+	text-align: center;
+}
+
+.weatherText{
+	font-size: 18px;
+}
+
+table{
+	margin-top: 50px;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th{
+	border: 2px #B1D0E6 solid;
+	padding: 0 10px;
+}
+th{
+	color: #00669C;
+}
+td{
+	color: #0066B2;
+	font-size: 18px;
+}
+dd{
+	margin-left: 0;
+}
+.container .row h2{
+	text-align: center;
+}
+
+#textmessage{
+	height: 100px;
+}
+
+#message input, #message textarea{
+	width: 100%;
+}
+
+.error{
+	color: red;
+}
+
+.block {
+
+    border: 1px solid #D1D7DE;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    background-color: #F7F7F9;
+
+}
+
+.block::before, .block::after {
+
+    content: ''; 
+    position: absolute;
+    left: -20px; top: 25px;
+    border: 10px solid transparent;
+    border-right: 10px solid #D1D7DE;
+
+}
+
+.block::after {
+
+    border-right: 10px solid #F7F7F9;
+    left: -19px;
+}
+
+.usem{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+label{
+	width: 120px;
+}
+input, select{
+	width: 200px;
+}
+input[type="checkbox"]{
+	width: 20px;
+}
+input[type="submit"]{
+	width: 60px;
+}

@@ -9,7 +9,7 @@ class WeatherController
 			preg_match('#<h1 class="wtitle">(.*?)</h1>#is', $gismeteo, $city);
 			preg_match_all("#<table>(.*?)</table>#is", $gismeteo, $pogoda);
 			$day=$pogoda[0];
-			require_once(ROOT.'/views/weather/index.php');
+			require_once(ROOT.'/views/weather.php');
 		}
 		else{
 			echo '<h2 style="color:red" class="vcenter">Только для зарегистрированных пользователей!</h2>';

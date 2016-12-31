@@ -6,7 +6,7 @@ class FeedbackController
 {
 	public function actionIndex()
 	{
-		require_once(ROOT.'/views/feedback/index.php');
+		require_once(ROOT.'/views/feedback.php');
 
 
 

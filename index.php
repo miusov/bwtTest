@@ -1,5 +1,5 @@
 <?php 
-include_once('template/header.php'); 
+include_once('site/header.php'); 
 session_start();
 ?>
 <div class="row">
@@ -14,7 +14,7 @@ session_start();
 		</div>
 	</div>
 </div>
-<?php include_once('template/footer.php') ?>
+
 <?php
 
 //ошибки
@@ -32,6 +32,7 @@ require_once(ROOT.'/components/Db.php');
 
 //подключение БД
 
+$db = Db::getConnection();
 
 
 //вызов router
@@ -39,5 +40,6 @@ require_once(ROOT.'/components/Db.php');
 $router=new Router();
 $router->run();
 ?>
+<?php include_once('site/footer.php') ?>
 
 
