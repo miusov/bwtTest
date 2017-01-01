@@ -1,21 +1,7 @@
 <?php 
-include_once('site/header.php'); 
 session_start();
-?>
-<div class="row">
-	<div class="col-md-12">
-		<div class="center">
-			<ul>
-				<li><a href="login">Вход/регистрация</a></li>
-				<li><a href="weather">Погода</a></li>
-				<li><a href="feedback">Оставить отзыв</a></li>
-				<li><a href="feeds">Отзывы</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<?php
+include_once('site/header.php'); 
+include_once('site/menu.php'); 
 
 //ошибки
 
@@ -40,6 +26,5 @@ $db = Db::getConnection();
 $router=new Router();
 $router->run();
 ?>
+
 <?php include_once('site/footer.php') ?>
-
-

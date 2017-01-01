@@ -15,23 +15,23 @@ class LoginController
 		$sex = $_POST['sex'];
 		$bdate = $_POST['bdate'];
 
-		if (isset($_POST['register'])) {
-			if ($_POST['name'] != '' && $_POST['surname'] != '' && $_POST['email'] != '') {
+		if (isset($_POST['register'])) {//регистрация пользователя
+			if ($_POST['name'] != '' && $_POST['surname'] != '' && $_POST['email'] != '') {//проверка полей на заполнение
 
-				$setlogin = Login::setLogin($name,$surname,$email,$sex,$bdate);
+				$setlogin = Login::setLogin($name,$surname,$email,$sex,$bdate);//метод setLogin класса Login
 				echo '<h3 style="color:green;text-align:center" >Вы зарегистрировались!</h3>';
 			}
 			else{
 				echo '<h3 style="color:red;text-align:center">Не все поля заполнены!</h3>';
 			}
 			
-			session_start();
+			session_start();//записываем пользователя в сессию
 			$_SESSION['name']=$_POST['name'];
 			$_SESSION['surname']=$_POST['surname'];
 		}
 
-		if (isset($_POST['login'])) {
-			if ($login = Login::getLogin($email)) {
+		if (isset($_POST['login'])) {//вход пользователя
+			if ($login = Login::getLogin($email)) {//метод getLogin класса Login
 				session_start();
 			$_SESSION['name']=$login['name'];
 			$_SESSION['surname']=$login['surname'];
@@ -43,7 +43,7 @@ class LoginController
 			
 		}
 
-		if (isset($_POST['exit'])) {
+		if (isset($_POST['exit'])) {//выхо из сессии
 			unset($_SESSION['name']);
 			unset($_SESSION['surname']);
 			echo '<script>location.href = "login"</script>';

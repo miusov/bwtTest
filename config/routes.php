@@ -1,5 +1,7 @@
 <?php
 
+// маршруты сайта
+
 return array(
 	'login' => 'login/index',
 	'weather' => 'weather/index',

@@ -1,5 +1,7 @@
 <?php
 
+// создаем маршрутизатор
+
 class Router
 {
 	private $routes;

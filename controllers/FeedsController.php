@@ -8,7 +8,7 @@ class FeedsController
 	{
 		if ($_SESSION['name']) {
 
-			$feeds = Feeds::getFeeds();
+			$feedbacks = Feeds::getFeeds();//метод getFeeds класса Feeds
 			require_once(ROOT.'/views/feeds.php');
 		}
 		else{

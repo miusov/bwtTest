@@ -1,5 +1,5 @@
 <?php 
-var_dump($feeds);
+for ($i=0; $i < count($feedbacks) ; $i++) { 
  ?>
 
 <div class="container">
@@ -8,16 +8,20 @@ var_dump($feeds);
 		<div class="col-md-12 comment-row">
 			<div class="col-md-2">
 				<div>
-					<p class="text-center usnm"><?php echo $array['name']; ?></p>
-					<p class="text-center usem"><?php echo $array['email']; ?></p>
+					<p class="text-center usnm"><?php echo $feedbacks[$i]['name']; ?></p>
+					<p class="text-center usem"><?php echo $feedbacks[$i]['email']; ?></p>
 				</div>
 			</div>
 			<div class="col-md-10 block">
-				<span><?php echo $array['message'] ?></span>
+				<span><?php echo $feedbacks[$i]['message'] ?></span>
 			</div>	
 		</div>
 		<div class="col-md-12 text-right" style="color:#9a9a9a">
-			<p><?php echo $array['datein'] ?></p>
+			<p><?php echo $feedbacks[$i]['datein'] ?></p>
 		</div>
 	</div>
 </div>
+
+<?php 
+}
+ ?>

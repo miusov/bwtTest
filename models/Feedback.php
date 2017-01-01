@@ -1,4 +1,7 @@
 <?php
+
+// записываем в БД данные с формы
+
 class Feedback
 {
 	public static function setFeedback($name,$email,$message,$datein)

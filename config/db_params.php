@@ -1,5 +1,7 @@
 <?php
 
+// параметры БД
+
 return array(
 	'host' => 'localhost',
 	'dbname' => 'bwt_test',

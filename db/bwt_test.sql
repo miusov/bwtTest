@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 31 2016 г., 15:45
+-- Время создания: Янв 01 2017 г., 22:22
 -- Версия сервера: 5.7.16
 -- Версия PHP: 5.6.29
 
@@ -34,13 +34,6 @@ CREATE TABLE `feedback` (
   `datein` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `feedback`
---
-
-INSERT INTO `feedback` (`id`, `name`, `email`, `message`, `datein`) VALUES
-(1, 'Артем', 'miusov86@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo facere nisi quis, cumque quibusdam accusantium, cupiditate quidem. Facilis nisi beatae inventore vero tempore reiciendis eveniet! Ipsam quae iusto optio, laboriosam architecto suscipit. Nam alias aliquid, nulla, illo ea animi accusamus non, fugiat laudantium optio quisquam. Voluptates quia iusto rem beatae!', '2016-12-31 14:51:08');
-
 -- --------------------------------------------------------
 
 --
@@ -55,13 +48,6 @@ CREATE TABLE `users` (
   `sex` varchar(32) NOT NULL,
   `bdate` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `users`
---
-
-INSERT INTO `users` (`id`, `name`, `surname`, `email`, `sex`, `bdate`) VALUES
-(1, 'artem', 'miusov', 'miusov@bigmir.net', 'male', '2016-12-01 00:00:00');
 
 --
 -- Индексы сохранённых таблиц
@@ -87,7 +73,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --

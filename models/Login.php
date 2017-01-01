@@ -1,5 +1,7 @@
 <?php
 
+// получаем данные из БД
+
 class Login
 {
 	public static function getLogin($email)
@@ -14,6 +16,8 @@ class Login
 	}
 
 
+// записываем данные из формы регистрации в БД
+
 	public static function setLogin($name,$surname,$email,$sex,$bdate)
 	{
 		$db = Db::getConnection();
@@ -26,27 +30,4 @@ class Login
         			  'bdate' => $bdate);
         $ins->execute($data);
 	}
-
-
-
-	// public static function getLogins()
-	// {
-	// 	$db = Db::getConnection();
-
-	// 	$logins = array();
-	// 	$result = $db->prepare('SELECT * FROM users');
-	// 	$result->execute();
-	// 	$i=0;
-	// 	while ( $login = $result->fetch(PDO::FETCH_LAZY)) {
-	// 		$logins[$i]['login']=$login['name'];
-	// 		$logins[$i]['pass']=$login['surname'];
-	// 		$logins[$i]['name']=$login['email'];
-	// 		$logins[$i]['sex']=$login['sex'];
-	// 		$logins[$i]['bdate']=$login['bdate'];
-
-	// 		$i++;
-	// 	}
-	// 	return $logins;
-	// }
 }
-
