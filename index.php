@@ -9,7 +9,7 @@ session_start();
 				<li><a href="login">Вход/регистрация</a></li>
 				<li><a href="weather">Погода</a></li>
 				<li><a href="feedback">Оставить отзыв</a></li>
-				<li><a href="list">Отзывы</a></li>
+				<li><a href="feeds">Отзывы</a></li>
 			</ul>
 		</div>
 	</div>
