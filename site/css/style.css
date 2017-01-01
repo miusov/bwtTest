@@ -132,7 +132,7 @@ dd{
 font-size: 12px;
 }
 
-label{
+#sendform label{
 	width: 120px;
 }
 input, select{
@@ -143,4 +143,7 @@ input[type="checkbox"]{
 }
 input[type="submit"]{
 	width: 60px;
+}
+input[name="register"]{
+	width: 160px;
 }

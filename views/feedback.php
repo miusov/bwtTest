@@ -4,11 +4,11 @@
 			<form action="<?php $_SERVER['PHP_SELF']?>" method="post" id="message">
 				<div class="form-group">
 					<label for="name">Имя*</label>
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="name" value="<?php echo $_SESSION['name'] ?>">
 				</div>
 				<div class="form-group">
 					<label for="surname">Email*</label>
-					<input type="text" name="email" id="email">
+					<input type="text" name="email" id="email" value="<?php echo $_SESSION['email'] ?>">
 				</div>
 				<div class="form-group">
 					<label for="textmessage">Ваше сообщение*</label>

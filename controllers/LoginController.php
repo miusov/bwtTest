@@ -28,6 +28,7 @@ class LoginController
 			session_start();//записываем пользователя в сессию
 			$_SESSION['name']=$_POST['name'];
 			$_SESSION['surname']=$_POST['surname'];
+			$_SESSION['email']=$_POST['email'];
 		}
 
 		if (isset($_POST['login'])) {//вход пользователя
